@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Song</title>
+  <meta name="description" content="Alan Song's personal website.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #0b63c4;
+      --border: #e5e5e5;
+      --card: #fafafa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111214;
+        --text: #e8e8e8;
+        --muted: #9a9a9a;
+        --accent: #6db3f2;
+        --border: #2a2c2f;
+        --card: #1a1c1f;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    nav .inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: baseline;
+      gap: 1.25rem;
+    }
+    nav .name { font-weight: 600; color: var(--text); margin-right: auto; }
+    nav a { color: var(--muted); font-size: 0.95rem; }
+    nav a:hover { color: var(--text); text-decoration: none; }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+    section { padding-top: 3rem; }
+    h1 { font-size: 1.9rem; margin: 0 0 0.5rem; }
+    h2 {
+      font-size: 1.25rem;
+      margin: 0 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .muted { color: var(--muted); }
+
+    .hero {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .hero .bio { flex: 1 1 320px; }
+    .hero img {
+      width: 200px;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .project {
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .project h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
+    .project p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+    ul.plain { padding-left: 1.25rem; margin: 0; }
+    ul.plain li { margin-bottom: 0.5rem; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="inner">
+      <span class="name">Alan Song</span>
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#random">random</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <div class="hero">
+        <div class="bio">
+          <h1>Hi, I'm Alan.</h1>
+          <p>
+            Welcome to my corner of the internet. I build things, break things,
+            and occasionally write about both.
+          </p>
+          <p class="muted">
+            This is a placeholder bio. Replace it with a few sentences about
+            who you are and what you're working on.
+          </p>
+        </div>
+        <img src="assets/prof_pic.jpg" alt="Photo of Alan Song">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3><a href="https://github.com/alansong21">Project One</a></h3>
+        <p>A short description of what it is and why it exists.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/alansong21">Project Two</a></h3>
+        <p>A short description of what it is and why it exists.</p>
+      </div>
+    </section>
+
+    <section id="random">
+      <h2>Random</h2>
+      <ul class="plain">
+        <li>Things I'm reading, playing, or thinking about.</li>
+        <li>Hot takes, cold takes, lukewarm takes.</li>
+        <li>Anything that doesn't fit anywhere else.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="plain">
+        <li>GitHub: <a href="https://github.com/alansong21">@alansong21</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/alansong21/">alansong21</a></li>
+        <li>X: <a href="https://x.com/balanbong">@balanbong</a></li>
+        <li>Email: <a href="mailto:alans@g.ucla.edu">alans@g.ucla.edu</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Alan Song
+  </footer>
+</body>
+</html>
